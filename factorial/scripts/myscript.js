@@ -12,6 +12,9 @@ $(document).ready(function() {
       return x * factorial(x - 1);
     };
 
-    console.log(factorial(limit));
+    var result = factorial(limit);
+    $('td#result').text(
+      'The factorial number of ' +
+      limit + '! is ' + result);
   });
 });
