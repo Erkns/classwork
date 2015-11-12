@@ -3,8 +3,15 @@ $(document).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
     var limit = parseInt($('input#number').val());
-    for (var i = 0; i < limit; i++) {
-      console.log();
-    }
+
+    function factorial(x) {
+      if (x === 0) {
+        return 1;
+      }
+
+      return x * factorial(x - 1);
+    };
+
+    console.log(factorial(limit));
   });
 });
