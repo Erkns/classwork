@@ -13,6 +13,15 @@ $(document).ready(function() {
       }
     }
 
-    console.log(fibonacciSequence);
+    var fibonacciNumber = fibonacciSequence.slice(-
+      1)[0];
+    console.log(fibonacciNumber);
+    if (fibonacciNumber % 2 === 0) {
+      $('td#result').empty().text(fibonacciNumber +
+        ' is a even number').css('color', 'blue');
+    } else {
+      $('td#result').empty().text(fibonacciNumber +
+        ' is a odd number').css('color', 'red');
+    }
   });
 });
