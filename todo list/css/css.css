@@ -1,0 +1,16 @@
+#list{
+  margin: 150px 300px 200px 300px;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin: 25px;
+}
+
+.done{
+  text-decoration: line-through;
+}
+.undo{
+  text-decoration: none;
+}

@@ -2,10 +2,27 @@
   <head>
     <title>Todo List</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
     <script src="scripts/jquery-1.11.3.js"></script>
     <script src="scripts/myscript.js"></script>
   </head>
   <body>
-
+    <div id="list">
+      <h2>Todo List</h2>
+    <form id="form" action="index.html" method="post">
+    <div class="form-group">
+      <label for="">Add task</label>
+      <input type="text" id="addtask" placeholder="Task Here">
+    </div>
+    <button type="submit" class="btn btn-info">Add</button>
+    <div id="buttontask">
+      <ul id="task">
+      </ul>
+    </div>
+    <div id="buttons">
+      <button id="delete" type="button" class="btn btn-danger">Delete</button>
+      <button id="done" type="button" class="btn btn-success">Done</button>
+      <button id="undo" type="button" class="btn btn-primary">undo</button>
+    </div>
   </body>
 </html>
